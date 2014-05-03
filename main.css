@@ -1,0 +1,20 @@
+body {
+	width: 50%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 38px;
+	margin-left: 8px;
+}
+.row-1 {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin: 16px 8px 8px 8px;
+	padding: 8px;
+	background-color: brown;
+	
+}
