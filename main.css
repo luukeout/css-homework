@@ -177,27 +177,176 @@ body {
 	-webkit-transform: skewY(25deg);
 }
 
-/*.boxes:hover {
-	-webkit-transform: rotate(360deg);
-	transition: all 1s linear;
-}*/
-
 .spin:hover {
 	-webkit-transform: rotate(360deg);
 	transition: all 1s linear;
 }
 
-/*.large-description {
-	/*font-family: 'Droid Sans', sans-serif;*/
-	font-size: 24px;
-	text-align: center;
-	line-height: 30px;
-	font-weight: bold;
-
+.boxcircle-container {
+	width: 720px;
+	height: 200px;
+	position: relative;
 }
-.large-description:hover {
-	transition: .5s ease;
-}*/
+
+.boxcircle {
+	width: 200px;
+	height: 200px;
+	display: block;
+	background-color: brown;
+	border-radius: 6px;
+	position: absolute;
+}
+
+@-webkit-keyframes boxcircle {
+  0%{left:0%;}
+  5%{left:;border-radius: 50%}
+  25%{border-radius: 50%}
+  50%{left:70%;border-radius: 6px}
+  55%{border-radius: 50%}
+  75% {border-radius: 50%}
+  100%{left:0%;}
+}
+
+
+.boxcircle{
+  -webkit-animation:boxcircle 5s infinite;
+}
+
+.nice-housing {
+	width: 200px;
+	height: 100px;
+	margin: 16px auto 16px auto;
+	position: relative;
+}
+
+.button {
+	width: 200px;
+	height: 100px;
+	background-color: rgb(42, 75, 165);
+	margin: 0px auto 16px auto;
+	border-radius: 12px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	text-shadow: 2px 3px 0px rgb(62, 61, 61);
+	box-shadow: 4px 7px 4px 0px rgb(174, 170, 170);
+	position: absolute;
+}
+
+.button:hover {
+	width: 200px;
+	height: 96px;
+	background-color: rgb(42, 75, 165);
+	margin: 0px auto 16px auto;
+	border-radius: 12px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	text-shadow: 2px 3px 0px rgb(62, 61, 61);
+	box-shadow:inset 4px 3px 0px 0px rgb(174, 170, 170);
+}
+
+.red-button {
+	width: 200px;
+	height: 200px;
+	margin: 16px auto 16px auto;
+	background-color: rgb(251,13,33);
+	border-radius: 50%;
+	box-shadow: 11px 7px 0px 0px rgb(249, 98, 98);
+	position: absolute;
+	top: 125px;
+	left: 42px;
+}
+
+.button-housing {
+	width: 300px;
+	height: 500px;
+	margin: 16px auto 16px auto;
+	background-color: #596a72;
+	position: relative;
+	border-radius: 4px;
+}
+
+.red-button:hover {
+	width: 200px;
+	height: 200px;
+	margin: 16px auto 16px auto;
+	background-color: #fb0d21;
+	border-radius: 50%;
+	box-shadow: inset 11px 7px 0px 0px rgb(174, 24, 24);
+	position: absolute;
+	top: 125px;
+	left: 42px;
+}
+
+.large-text:hover { 
+	font-size: 32px;
+}
+
+.color-ball-container {
+	width: 720px;
+	height: 200px;
+	margin: 16px auto 16px auto;
+	position: relative;
+}
+
+
+.color-ball-1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	background-color: yellow;
+	opacity: .6;
+}
+
+.color-ball-2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	background-color: blue;
+	opacity: .2;
+}
+
+@-webkit-keyframes color-ball{
+  0%{left:0%;}
+  /*50%{:100%;}*/
+  100%{left:72%;}
+}
+
+
+.color-ball-1{
+  -webkit-animation:color-ball 5s infinite;
+}
+
+.big-text {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	line-height: 200px;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.blue-font:hover {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	line-height: 200px;
+	font-weight: bold;
+	font-size: 32px;
+	color: rgb(42, 75, 165)
+}
+
+
+
 
 
 
